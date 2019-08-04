@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lan-web/static/css/main.b5915843.chunk.css",
-    "main.js": "/lan-web/static/js/main.712bb04b.chunk.js",
-    "main.js.map": "/lan-web/static/js/main.712bb04b.chunk.js.map",
+    "main.css": "/lan-web/static/css/main.5088f88e.chunk.css",
+    "main.js": "/lan-web/static/js/main.096a479b.chunk.js",
+    "main.js.map": "/lan-web/static/js/main.096a479b.chunk.js.map",
     "runtime~main.js": "/lan-web/static/js/runtime~main.5b8687c4.js",
     "runtime~main.js.map": "/lan-web/static/js/runtime~main.5b8687c4.js.map",
     "static/css/2.862259ab.chunk.css": "/lan-web/static/css/2.862259ab.chunk.css",
@@ -13,9 +13,9 @@
     "static/js/4.33a0fee4.chunk.js": "/lan-web/static/js/4.33a0fee4.chunk.js",
     "static/js/4.33a0fee4.chunk.js.map": "/lan-web/static/js/4.33a0fee4.chunk.js.map",
     "index.html": "/lan-web/index.html",
-    "precache-manifest.0f8da88dd06fe6d419c684bc3f4a5e31.js": "/lan-web/precache-manifest.0f8da88dd06fe6d419c684bc3f4a5e31.js",
+    "precache-manifest.f4b396164ac238691e31a4b04a7965c9.js": "/lan-web/precache-manifest.f4b396164ac238691e31a4b04a7965c9.js",
     "service-worker.js": "/lan-web/service-worker.js",
     "static/css/2.862259ab.chunk.css.map": "/lan-web/static/css/2.862259ab.chunk.css.map",
-    "static/css/main.b5915843.chunk.css.map": "/lan-web/static/css/main.b5915843.chunk.css.map"
+    "static/css/main.5088f88e.chunk.css.map": "/lan-web/static/css/main.5088f88e.chunk.css.map"
   }
 }
