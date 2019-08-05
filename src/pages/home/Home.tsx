@@ -25,11 +25,7 @@ class Home extends Component {
           </div>
           <div className="main-area">
               <div className="source">
-                  <div className="entry-list">
-                    <ul>
-                      
-                    </ul>
-                  </div>
+
               </div>
           </div>
       </div>
