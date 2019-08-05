@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react';
+import React, { PureComponent } from 'react';
 import { NavLink , Switch, Route , Redirect} from 'react-router-dom';
 // import classnames  from 'classnames';
 import './App.css';
@@ -46,10 +46,11 @@ const Header = () => (
 const Main = () => (
     <main className="main-area">
         <Switch>
-            <Route exact path='/home' component={Home}/>
+            <Route path='/home' component={Home}/>
             <Route path='/original' component={Original}/>
             <Route path='/reprint' component={Reprint}/>
             <Route path='/essay' component={Essay}/>
+            <Redirect to='/'/>
         </Switch>
     </main>
 )
