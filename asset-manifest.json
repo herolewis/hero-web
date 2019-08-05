@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/lan-web/static/css/main.5088f88e.chunk.css",
-    "main.js": "/lan-web/static/js/main.096a479b.chunk.js",
-    "main.js.map": "/lan-web/static/js/main.096a479b.chunk.js.map",
-    "runtime~main.js": "/lan-web/static/js/runtime~main.5b8687c4.js",
-    "runtime~main.js.map": "/lan-web/static/js/runtime~main.5b8687c4.js.map",
+    "main.css": "/lan-web/static/css/main.b56009e6.chunk.css",
+    "main.js": "/lan-web/static/js/main.5018680c.chunk.js",
+    "main.js.map": "/lan-web/static/js/main.5018680c.chunk.js.map",
+    "runtime~main.js": "/lan-web/static/js/runtime~main.b1464332.js",
+    "runtime~main.js.map": "/lan-web/static/js/runtime~main.b1464332.js.map",
     "static/css/2.862259ab.chunk.css": "/lan-web/static/css/2.862259ab.chunk.css",
-    "static/js/2.e97ca0b7.chunk.js": "/lan-web/static/js/2.e97ca0b7.chunk.js",
-    "static/js/2.e97ca0b7.chunk.js.map": "/lan-web/static/js/2.e97ca0b7.chunk.js.map",
-    "static/js/3.139b426c.chunk.js": "/lan-web/static/js/3.139b426c.chunk.js",
-    "static/js/3.139b426c.chunk.js.map": "/lan-web/static/js/3.139b426c.chunk.js.map",
-    "static/js/4.33a0fee4.chunk.js": "/lan-web/static/js/4.33a0fee4.chunk.js",
-    "static/js/4.33a0fee4.chunk.js.map": "/lan-web/static/js/4.33a0fee4.chunk.js.map",
+    "static/js/2.c2483d26.chunk.js": "/lan-web/static/js/2.c2483d26.chunk.js",
+    "static/js/2.c2483d26.chunk.js.map": "/lan-web/static/js/2.c2483d26.chunk.js.map",
+    "static/js/3.a1594546.chunk.js": "/lan-web/static/js/3.a1594546.chunk.js",
+    "static/js/3.a1594546.chunk.js.map": "/lan-web/static/js/3.a1594546.chunk.js.map",
+    "static/js/4.005deafa.chunk.js": "/lan-web/static/js/4.005deafa.chunk.js",
+    "static/js/4.005deafa.chunk.js.map": "/lan-web/static/js/4.005deafa.chunk.js.map",
+    "static/js/5.e8c33510.chunk.js": "/lan-web/static/js/5.e8c33510.chunk.js",
+    "static/js/5.e8c33510.chunk.js.map": "/lan-web/static/js/5.e8c33510.chunk.js.map",
     "index.html": "/lan-web/index.html",
-    "precache-manifest.f4b396164ac238691e31a4b04a7965c9.js": "/lan-web/precache-manifest.f4b396164ac238691e31a4b04a7965c9.js",
+    "precache-manifest.b414edf22a89a15e0c67ac53429a5bf6.js": "/lan-web/precache-manifest.b414edf22a89a15e0c67ac53429a5bf6.js",
     "service-worker.js": "/lan-web/service-worker.js",
     "static/css/2.862259ab.chunk.css.map": "/lan-web/static/css/2.862259ab.chunk.css.map",
-    "static/css/main.5088f88e.chunk.css.map": "/lan-web/static/css/main.5088f88e.chunk.css.map"
+    "static/css/main.b56009e6.chunk.css.map": "/lan-web/static/css/main.b56009e6.chunk.css.map"
   }
 }
