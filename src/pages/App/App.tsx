@@ -46,6 +46,7 @@ const Header = () => (
 const Main = () => (
     <main className="main-area">
         <Switch>
+            <Route exact path='/' component={Home}/>
             <Route path='/home' component={Home}/>
             <Route path='/original' component={Original}/>
             <Route path='/reprint' component={Reprint}/>
