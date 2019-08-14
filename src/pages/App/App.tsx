@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { NavLink , Switch, Route , Redirect} from 'react-router-dom';
 // import classnames  from 'classnames';
-import './App.css';
+import './App.scss';
 import Home from "../home/Home";
 import asyncComponent from '../../utils/asyncComponent';
 const Original = asyncComponent(() => import("../original/Original"));
@@ -34,17 +34,23 @@ const selectedStyle = {
 }
 
 const Header = () => (
-    <header className="nav-bar">
+    <header className="header">
         {
             NAV_CONTENT.map((el,index)=> {
                 return  <NavLink to={el.path} activeStyle = {selectedStyle} key={index}>{el.name}</NavLink>
             })
         }
     </header>
-)
+);
+
+const Footer = () => (
+    <footer className="footer">
+        <div>版权所有</div>
+    </footer>
+);
 
 const Main = () => (
-    <main className="main-area">
+    <main className="content">
         <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/home' component={Home}/>
@@ -60,9 +66,10 @@ class App extends PureComponent {
 
     render() {
         return (
-            <div className="layout source-layout">
+            <div className="root">
                 <Header></Header>
                 <Main></Main>
+                <Footer></Footer>
             </div>
         );
     }

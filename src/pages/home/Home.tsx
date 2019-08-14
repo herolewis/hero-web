@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { List, Avatar, Button, Skeleton } from 'antd';
 // import reqwest from 'reqwest';
-import './Home.css';
+import './Home.scss';
 const reqwest = require('reqwest');
 
-const count = 3;
+const count = 10;
 const fakeDataUrl = `https://randomuser.me/api/?results=${count}&inc=name,gender,email,nat&noinfo`;
 
 class Home extends Component {
