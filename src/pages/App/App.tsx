@@ -34,7 +34,7 @@ const selectedStyle = {
 }
 
 const Header = () => (
-    <header className="header">
+    <header>
         {
             NAV_CONTENT.map((el,index)=> {
                 return  <NavLink to={el.path} activeStyle = {selectedStyle} key={index}>{el.name}</NavLink>
@@ -44,7 +44,7 @@ const Header = () => (
 );
 
 const Footer = () => (
-    <footer className="footer">
+    <footer>
         <div>版权所有</div>
     </footer>
 );
@@ -60,7 +60,7 @@ const Main = () => (
             <Redirect to='/'/>
         </Switch>
     </main>
-)
+);
 
 class App extends PureComponent {
 
