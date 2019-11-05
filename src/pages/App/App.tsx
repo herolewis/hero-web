@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import { NavLink , Switch, Route , Redirect} from 'react-router-dom';
-// import classnames  from 'classnames';
 import './App.scss';
 import Home from "../home/Home";
 import asyncComponent from '../../utils/asyncComponent';
@@ -29,12 +28,11 @@ const NAV_CONTENT = [
 ];
 // 高亮的样式，表示我们在哪个导航下
 const selectedStyle = {
-    backgroundColor: 'white',
     color: 'blue'
 }
 
 const Header = () => (
-    <header className="header">
+    <header>
         {
             NAV_CONTENT.map((el,index)=> {
                 return  <NavLink to={el.path} activeStyle = {selectedStyle} key={index}>{el.name}</NavLink>
@@ -43,11 +41,6 @@ const Header = () => (
     </header>
 );
 
-const Footer = () => (
-    <footer className="footer">
-        <div>版权所有</div>
-    </footer>
-);
 
 const Main = () => (
     <main className="content">
@@ -69,7 +62,6 @@ class App extends PureComponent {
             <div className="root">
                 <Header></Header>
                 <Main></Main>
-                <Footer></Footer>
             </div>
         );
     }
