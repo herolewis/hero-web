@@ -13,9 +13,9 @@ class Original extends Component {
                       <div className="camera -z">
                           <div className="particles">
                               {
-                                 new Array(200).fill('').map(item => {
+                                 new Array(200).fill('').map((item,index) => {
                                    return (
-                                    <div className="particle" key="item">
+                                    <div className="particle" key={index}>
                                         <div className="rotate">
                                             <div className="part">
                                                 <div className="rotatefollow">

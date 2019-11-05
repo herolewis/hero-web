@@ -28,7 +28,7 @@ const NAV_CONTENT = [
 ];
 // 高亮的样式，表示我们在哪个导航下
 const selectedStyle = {
-    color: 'blue'
+    color: 'purple'
 }
 
 const Header = () => (
@@ -53,7 +53,7 @@ const Main = () => (
             <Redirect to='/'/>
         </Switch>
     </main>
-)
+);
 
 class App extends PureComponent {
 

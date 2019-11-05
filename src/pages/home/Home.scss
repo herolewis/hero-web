@@ -1,7 +1,7 @@
 .home {
     background-image:linear-gradient(transparent,transparent 350px,rgba(white,0) 350px,rgba(black,.8)), url("../../static/images/stars_dzyjfk.jpg");
     background-position:0 0;
-    background-size: contain;
+    background-size: cover;
     animation:backgroundCrawl 50s linear infinite;
     height: 100%;
     padding-top: 400px;
