@@ -1,93 +1,12 @@
 .home {
-    background-image:linear-gradient(transparent,transparent 350px,rgba(white,0) 350px,rgba(black,.8)), url("../../static/images/stars_dzyjfk.jpg");
-    background-position:0 0;
-    background-size: cover;
-    animation:backgroundCrawl 50s linear infinite;
-    height: 100%;
-    padding-top: 400px;
+  margin-top: 10px;
+  .ant-tabs {
+    padding: 0 20px;
   }
-  
-  .earth {
-    width:125px;
-    height:125px;
-    border-radius:100%;
-    background: url("../../static/images/earthmap.jpg") 0 0 repeat;
-    background-size:cover;
-    position:relative;
-    animation:earthBounce .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) alternate infinite, slowSpin 6s linear infinite, earthRotate 12s linear infinite;
-    z-index:1;
-    left:50%;
-    margin-left:-62.5px;
-  }
-  
-  .earth-shadow {
-    margin-top: 400px;
-    width:125px;
-    height:125px;
-    border-radius:100%;
-    box-shadow:0 0 60px 0 rgba(#0085ff,.6);
-    background-image:linear-gradient( transparent,rgba(black,.9)), radial-gradient(circle at top, transparent 0, rgba(white,.09) 90px, transparent 90px, transparent);
-    position:absolute;
-    animation:earthBounce .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) alternate infinite;
-    left:50%;
-    margin-left:-62.5px;
-    z-index:1;
-  }
-  
-  .ground-shadow {
-    margin:-10px auto 0;
-    width:100px;
-    height:20px;
-    background:rgba(0,0,0,.1);
-    border-radius:100%;
-    animation: shadow .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
-    position:relative;
-    z-index:0;
-  }
-  
-  @keyframes earthBounce {
-    0% {
-      top:0;
-    }
-    100% {
-      top:-200px;
+  .post-time {
+    font-size: 12px;
+    & > span:nth-child(1) {
+      margin-right: 10px;
     }
   }
-  
-  @keyframes shadow {
-  0% {
-         transform: scale(.5);
-         background-color:rgba(0,0,0,.2);
-      }
-  100% {
-        transform: scale(1.1);
-        background-color:rgba(0,0,0,.05);
-      }
-  }
-  
-  @keyframes slowSpin {
-    0% {
-      transform:rotate(0);
-    }
-    100% {
-      transform:rotate(360deg);
-    }
-  }
-  
-  @keyframes backgroundCrawl {
-    0% {
-      background-position:0 0;
-    }
-    100%{
-      background-position:-2000px 0;
-    }
-  }
-  
-  @keyframes earthRotate {
-    0% {
-      background-position:0 0;
-    }
-    100%{
-      background-position:-500px 0;
-    }
-  }
+}

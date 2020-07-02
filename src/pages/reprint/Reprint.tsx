@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+const Reprint = () => {
+    return (
+        <div className="Reprint">
 
-class Home extends Component {
-
-    render() {
-        return (
-            <div className="home">
-                
-            </div>
-        );
-    }
+        </div>
+    );
 }
 
-export default Home;
+export default Reprint;
