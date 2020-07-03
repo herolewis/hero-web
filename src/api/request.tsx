@@ -20,7 +20,10 @@ instance.interceptors.response.use(
     // @ts-ignore
     response => {
         const res = response.data;
-        return Promise.resolve(res);
+        if(res.code === 1) {
+            return Promise.resolve(res);
+        }
+        throw Promise.reject(res.msg);
     },
     error => {
         return Promise.reject(error)

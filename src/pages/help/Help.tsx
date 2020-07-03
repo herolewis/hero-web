@@ -1,12 +1,11 @@
 import React from 'react';
-import './Original.scss';
 import { Empty } from 'antd';
-const Original = () => {
+
+const Help = () => {
     return (
-        <div className="Original">
+        <div className="help">
             <Empty description="暂无数据"></Empty>
         </div>
     );
 }
-
-export default Original;
+export default Help;
