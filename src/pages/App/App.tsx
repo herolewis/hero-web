@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import { Switch, Route , Redirect , useHistory} from 'react-router-dom';
-import { Layout , Menu } from 'antd';
+import { Layout , Menu,Row, Col } from 'antd';
 import './App.scss';
 import Home from "../home/Home";
 import Original from "../original/Original";
@@ -69,15 +69,21 @@ const App = () => {
     },[])
     return (
         <div className="root">
-            <Layout>
+            <Layout className="lan-layout">
                 <Header className="lan-header">
-                    <Menu onClick={HandleClick} selectedKeys={[current]} mode="horizontal">
-                        {
-                            navContent.map((el:navItemInterface,index: number) => {
-                                return <Menu.Item key={el.key}>{el.name}</Menu.Item>
-                            })
-                        }
-                    </Menu>
+                    <Row>
+                        <Col span={8}></Col>
+                        <Col span={8} offset={8}>
+                            <Menu onClick={HandleClick} selectedKeys={[current]} mode="horizontal">
+                                {
+                                    navContent.map((el:navItemInterface,index: number) => {
+                                        return <Menu.Item key={el.key}>{el.name}</Menu.Item>
+                                    })
+                                }
+                            </Menu>
+                        </Col>
+                    </Row>
+
                 </Header>
                 <Content className="lan-content">
                     <Main></Main>

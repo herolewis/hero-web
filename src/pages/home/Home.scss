@@ -10,3 +10,11 @@
     }
   }
 }
+
+.detail {
+  padding: 20px;
+  width: 100%;
+  & > h2 {
+    text-align: center;
+  }
+}

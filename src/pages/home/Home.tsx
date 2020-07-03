@@ -46,8 +46,11 @@ const Detail = (props) => {
         })
     }
     return (
-        <div className="detail" dangerouslySetInnerHTML={{__html: detail.content}}>
+        <div className="detail">
+           <h2>{detail.title}</h2>
+           <div  dangerouslySetInnerHTML={{__html: detail.content}}>
 
+           </div>
         </div>
     );
 }
