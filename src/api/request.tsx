@@ -10,6 +10,8 @@ instance.interceptors.request.use(
         config.url = `${config.url}?app_id=ykholzngnvdqlrvn&app_secret=RVBocWEzUFJkYm1yMlFobHVnNnFtdz09`;
         // 请求头携带token
         // config.headers['AuthToken'] = 'your.token';
+        // config.headers['app_id'] = 'ykholzngnvdqlrvn';
+        // config.headers['app_secret'] = 'RVBocWEzUFJkYm1yMlFobHVnNnFtdz09';
         return config;
     },
     error => {
@@ -21,7 +23,7 @@ instance.interceptors.response.use(
     response => {
         const res = response.data;
         if(res.code === 1) {
-            return Promise.resolve(res);
+            return res;
         }
         throw Promise.reject(res.msg);
     },

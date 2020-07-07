@@ -1,7 +1,6 @@
 import React, { useEffect, useReducer} from 'react';
 import { useHistory, withRouter} from 'react-router-dom';
-import {getNewsList, getNewsTypes} from "../../api/getData";
-import './Home.scss';
+import {getNewsList, getNewsTypes} from "../../../api/getData";
 import { List , Tabs } from 'antd';
 const { TabPane } = Tabs;
 interface listItem {
@@ -16,7 +15,7 @@ interface typeItem {
     typeId: number,
     typeName: string
 }
-const NewsList = () => {
+const Index = () => {
     const initialState = {
         list: [],
         types: [],
@@ -97,4 +96,4 @@ const NewsList = () => {
     );
 };
 
-export default withRouter(NewsList);
+export default withRouter(Index);

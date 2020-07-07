@@ -1,15 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { withRouter} from 'react-router-dom';
-import {getNewsDetail} from "../../api/getData";
-import { Empty } from 'antd';
-import './Home.scss';
-const NewsDetail = (props: {
-    match: {
-        params: {
-            id: string
-        }
-    }
-}) => {
+import {getNewsDetail} from "../../../api/getData";
+const Detail = (props:any) => {
     const [detail, setDetail] = useState<{
         content: string,
         cover: string,
@@ -21,9 +13,10 @@ const NewsDetail = (props: {
     });
     useEffect(()=> {
         (async () => {
-            getListDetail(props.match.params.id);
+            const { id } = props.match.params;
+            getListDetail(id);
         })();
-    }, [props.match.params.id]);
+    }, []);
     const getListDetail = (newsId: string) => {
         getNewsDetail({
             newsId: newsId
@@ -35,14 +28,12 @@ const NewsDetail = (props: {
     }
     return (
         <div className="detail">
-            {
-                detail.content ?  <div className="article-intro">
-                    <h2>{detail.title}</h2>
-                    <article  dangerouslySetInnerHTML={{__html: detail.content}}></article>
-                </div>: <Empty description="暂无数据"/>
-            }
+            <h2>{detail.title}</h2>
+            <div  dangerouslySetInnerHTML={{__html: detail.content}}>
+
+            </div>
         </div>
     );
 }
 
-export default withRouter(NewsDetail);
+export default withRouter(Detail);
