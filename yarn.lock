@@ -8696,7 +8696,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.5.0, prop-types@^15.6.2:
+prop-types@^15.6.0, prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -9234,6 +9234,14 @@ react-dom@^16.13.1:
     prop-types "^15.6.2"
     scheduler "^0.19.1"
 
+react-draggable@^4.4.3:
+  version "4.4.3"
+  resolved "https://registry.npm.taobao.org/react-draggable/download/react-draggable-4.4.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-draggable%2Fdownload%2Freact-draggable-4.4.3.tgz#0727f2cae5813e36b0e4962bf11b2f9ef2b406f3"
+  integrity sha1-ByfyyuWBPjaw5JYr8RsvnvK0BvM=
+  dependencies:
+    classnames "^2.2.5"
+    prop-types "^15.6.0"
+
 react-error-overlay@^6.0.3:
   version "6.0.7"
   resolved "https://registry.npm.taobao.org/react-error-overlay/download/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
@@ -9243,20 +9251,6 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   version "16.13.1"
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
-
-react-loadable@^5.5.0:
-  version "5.5.0"
-  resolved "https://registry.npm.taobao.org/react-loadable/download/react-loadable-5.5.0.tgz#582251679d3da86c32aae2c8e689c59f1196d8c4"
-  integrity sha1-WCJRZ509qGwyquLI5onFnxGW2MQ=
-  dependencies:
-    prop-types "^15.5.0"
-
-react-router-config@^5.1.1:
-  version "5.1.1"
-  resolved "https://registry.npm.taobao.org/react-router-config/download/react-router-config-5.1.1.tgz#0f4263d1a80c6b2dc7b9c1902c9526478194a988"
-  integrity sha1-D0Jj0agMay3HucGQLJUmR4GUqYg=
-  dependencies:
-    "@babel/runtime" "^7.1.2"
 
 react-router-dom@^5.2.0:
   version "5.2.0"

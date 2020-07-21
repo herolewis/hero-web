@@ -7,40 +7,35 @@ import Detail from '../pages/home/news/detail';
 import Help from '../pages/help';
 export interface RouteItem {
     path: string,
-    component: React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined,
+    component?: React.ReactElement<any, string | React.JSXElementConstructor<any>> | string | number | {} | React.ReactNodeArray | React.ReactPortal | boolean | null | undefined,
     exact?: boolean,
     redirect?: string,
-    routes: Array<RouteItem>
+    children?: Array<RouteItem>
 }
 // 登录页
 const routes: Array<RouteItem> = [
     {
         path: "/help",
         component: Help,
-        exact: true,
-        routes: []
+        exact: true
     },
     {
-        path: "/",
-        component: App,
-        routes: [{
-            path: "/home",
-            component: Home,
-            redirect: "/home/list",
-            routes: [{
-                path: "/home/list",
-                component: List,
-                routes: [],
-            },{
-                path: "/home/detail/:id",
-                component: Detail,
-                routes: [],
-            },{
-                path: '/home/notes',
-                component: Notes,
-                routes: []
-            }]
+        path: "/home",
+        component: Home,
+        children: [{
+            path: "/home/list",
+            component: List
+        },{
+            path: "/home/detail/:id",
+            component: Detail
+        },{
+            path: '/home/notes',
+            component: Notes
         }]
+    },
+    {
+        path: '/',
+        redirect: '/home/list'
     }
 ]
 export default routes

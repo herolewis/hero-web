@@ -1,6 +1,7 @@
 import React from 'react';
-import {withRouter, Switch, Route, useHistory,Redirect} from 'react-router-dom';
+import {withRouter, useHistory} from 'react-router-dom';
 import { Menu , Layout } from 'antd';
+import RouterComp from "../../router/routerComp";
 import './index.scss';
 const { Content, Sider } = Layout;
 const Home = (props) => {
@@ -52,21 +53,7 @@ const Home = (props) => {
                         background: '#FFF'
                     }}
                 >
-                    <Switch>
-                        {
-                            props.routes.map((route, index: number) => {
-                                return <Route path={route.path}
-                                              exact={route.exact}
-                                              render={props => {
-                                                  // @ts-ignore
-                                                  return <route.component {...props} routes={route.routes}/>
-                                              }}
-                                              key={index}>
-                                </Route>
-                            })
-                        }
-                        <Redirect to="/home/list"></Redirect>
-                    </Switch>
+                  <RouterComp routes = {props.routes} />
                 </Content>
             </Layout>
         </Layout>

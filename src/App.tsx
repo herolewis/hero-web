@@ -1,21 +1,13 @@
-import React from 'react';
-import { Switch,Route,Redirect } from 'react-router-dom';
-const App = (props) => {
-    return (
-        <Switch>
-            {
-                props.routes.map((item, index) => {
-                    return <Route path={item.path}
-                                  exact={item.exact}
-                                  render={props => {
-                                      return <item.component {...props} routes={item.routes}/>
-                                  }}
-                                  key={index}>
-                    </Route>
-                })
-            }
-        </Switch>
-    )
-}
+import React from "react";
+import { HashRouter as Router } from "react-router-dom";
+import RouterComp from "./router/routerComp";
+import routes from "./router/routes";
+const App = () => {
+  return (
+    <Router>
+      <RouterComp routes={routes} />
+    </Router>
+  );
+};
 
 export default App;
